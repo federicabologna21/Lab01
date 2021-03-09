@@ -35,11 +35,20 @@ public class FXMLController {
     @FXML
     void doInsert(ActionEvent event) {
     	// TODO
+    	String p = txtParola.getText().toLowerCase(); 
+    	// non mette in ordine
+    	elenco.addParola(p);
+    	elenco.getElenco();
+    	txtResult.setText(""+elenco.toString());
+    	txtParola.setText("");
+    	
     }
 
     @FXML
     void doReset(ActionEvent event) {
     	// TODO
+    	txtResult.clear(); // cancello l'area di testo
+    	elenco.reset(); // azzero l'elenco
     }
 
     @FXML
