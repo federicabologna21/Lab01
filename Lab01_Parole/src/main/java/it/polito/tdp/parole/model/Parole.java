@@ -39,6 +39,12 @@ public class Parole {
 		return s;
 	}
 
+	public void removeParola(String parola) {
+		// TODO Auto-generated method stub
+		listaParole.remove(parola);
+		
+	}
+
 	
 }
 
